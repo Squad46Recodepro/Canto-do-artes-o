@@ -1,0 +1,22 @@
+CREATE TABLE Comprador 
+( 
+ E-mail INT,  
+ Telefone INT,  
+ Nome INT PRIMARY KEY,  
+); 
+
+CREATE TABLE Produto 
+( 
+ Preço INT,  
+ Nome INT,  
+ Código INT PRIMARY KEY,  
+); 
+
+CREATE TABLE Rel 
+( 
+ Código INT PRIMARY KEY,  
+ Nome INT PRIMARY KEY,  
+); 
+
+ALTER TABLE Rel ADD FOREIGN KEY(Código) REFERENCES Produto (Código)
+ALTER TABLE Rel ADD FOREIGN KEY(Nome) REFERENCES Comprador (Nome)
