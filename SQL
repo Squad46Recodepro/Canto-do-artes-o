@@ -1,0 +1,16 @@
+CREATE TABLE Comprador 
+( 
+ Nome CHAR(n),  
+ E-mail CHAR(n),  
+ Telefone INT,  
+); 
+
+CREATE TABLE [object Object] 
+( 
+ Código INT,  
+ Nome CHAR(n),  
+ Preço INT,  
+ idComprador INT,  
+); 
+
+ALTER TABLE [object Object] ADD FOREIGN KEY(idComprador) REFERENCES Comprador (idComprador)
